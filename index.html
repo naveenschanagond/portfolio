@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naveen S Chanagond | Information Science &amp; Engineering Student</title>
+<meta name="description" content="Portfolio of Naveen S Chanagond, aspiring software developer and ISE student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+<header class="nav" id="nav">
+  <a class="logo" href="#home" aria-label="Home">NSC<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#performance">Performance</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="icon-btn" id="theme" aria-label="Toggle dark or light theme">◐</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="hero-text">
+    <p class="hello">Hi, I'm</p>
+    <h1 id="name">Naveen S Chanagond</h1>
+    <h2>Information Science &amp; Engineering Student</h2>
+    <p class="tag">Aspiring Software Developer | Problem Solver | Tech Enthusiast</p>
+    <p class="typing">I am a <span id="typed" aria-live="off"></span><b class="caret">|</b></p>
+    <p class="intro">I enjoy turning ideas into working software, from clean web interfaces to data-driven applications, and I am building my skills one project at a time.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">Explore My Work</a>
+      <a class="btn ghost" href="assets/resume.pdf" download>Download Resume</a>
+    </div>
+    <div class="social" id="social-hero"></div>
+  </div>
+  <div class="avatar" aria-label="Profile photo">
+    <div class="ring"></div>
+    <img src="assets/Naveen.jpg" alt="Portrait of Naveen S Chanagond" width="320" height="320" onerror="this.remove()">
+    <span class="initials" aria-hidden="true">NS</span>
+  </div>
+</section>
+
+<section id="about" class="sec reveal">
+  <h2 class="title">About Me</h2>
+  <div class="grid two">
+    <div class="card">
+      <p>I am an Information Science &amp; Engineering student who enjoys programming, web development and solving problems. I like understanding how things work and building tools that people can use.</p>
+      <p><strong>Education:</strong> B.E. in Information Science &amp; Engineering, <span id="about-sem">Semester: edit in script.js</span>.</p>
+      <p><strong>Career goal:</strong> to grow into a software developer who writes reliable, readable code and contributes to meaningful products.</p>
+      <p><strong>Interests:</strong> programming, web development, data structures and algorithms, databases.</p>
+      <p><strong>Strengths:</strong> curiosity, consistent practice, and breaking big problems into small steps.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<section id="skills" class="sec reveal">
+  <h2 class="title">Skills</h2>
+  <div class="grid three" id="skills-grid"></div>
+</section>
+
+<section id="projects" class="sec reveal">
+  <h2 class="title">Projects</h2>
+  <div class="grid two" id="projects-grid"></div>
+</section>
+
+<section id="performance" class="sec reveal">
+  <h2 class="title">Performance &amp; Achievements</h2>
+  <div class="grid three" id="perf-grid"></div>
+</section>
+
+<section id="education" class="sec reveal">
+  <h2 class="title">Education</h2>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<section id="contact" class="sec reveal">
+  <h2 class="title">Contact</h2>
+  <div class="grid two">
+    <div class="card">
+      <p>Have an internship, project or question? Send a message.</p>
+      <p><a id="email-link" href="#">your-email@example.com</a></p>
+      <div class="social" id="social-contact"></div>
+    </div>
+    <form class="card" id="form" novalidate>
+      <label>Name<input name="name" required autocomplete="name"><small></small></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"><small></small></label>
+      <label>Subject<input name="subject" required><small></small></label>
+      <label>Message<textarea name="message" rows="5" required minlength="10"></textarea><small></small></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><p>© <span id="year"></span> Naveen S Chanagond</p></footer>
+<button id="top" class="icon-btn top" aria-label="Back to top" hidden>↑</button>
+<script src="script.js"></script>
+</body>
+</html>
